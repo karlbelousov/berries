@@ -1,0 +1,36 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 550px;
+    align-items: center;
+    gap: 0 16px;
+  }
+
+  @media (min-width: $desctop) {
+    gap: 0 28px;
+  }
+}
+
+.menu__link {
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+
+  &:hover {
+    color: $green-hover;
+  }
+
+  &:focus(:not(:active)) {
+    outline: 1px solid $green-hover;
+  }
+
+  &:active {
+    color: $green;
+  }
+}

@@ -1,0 +1,37 @@
+.logo {
+  display: flex;
+  gap: 0 8px;
+
+  &:hover {
+    .logo__image path:nth-child(5),
+    .logo__image path:nth-child(6) {
+      fill: $green-hover;
+    }
+
+    .logo__text {
+      color: $green-hover;
+    }
+  }
+
+  &:active {
+    .logo__image path:nth-child(5),
+    .logo__image path:nth-child(6) {
+      fill: $green-disabled;
+    }
+
+    .logo__text {
+      color: $green-disabled;
+    }
+  }
+}
+
+.logo__text {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+
+  font-family: "AmaticSC";
+  font-size: 40px;
+  font-weight: 700;
+  color: $green;
+}

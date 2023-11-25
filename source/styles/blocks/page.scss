@@ -6,7 +6,10 @@
   font-size: 16px;
   line-height: normal;
   font-weight: 400;
-  // font-family: 'AmaticSC', sans-serif;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 .page__body {

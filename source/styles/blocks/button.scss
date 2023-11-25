@@ -1,0 +1,20 @@
+.button {
+  padding: 16px 84px;
+  background-color: $purple;
+  color: $basic-white;
+  border-radius: 40px;
+  font-size: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    padding: 16px 104px;
+  }
+
+  &:hover {
+    background-color: $purple-hover;
+  }
+
+  &:active {
+    background-color: $purple-disabled;
+  }
+}

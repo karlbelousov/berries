@@ -1,0 +1,16 @@
+.title {
+  color: $green;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 52px;
+  }
+}

@@ -1,8 +1,23 @@
-// .delivery {
-//   background-image: url("../../images/background/delivery-bg.png");
-//   background-repeat: no-repeat;
-//   background-size: 100% auto;
-// }
+.delivery {
+  min-height: 640px;
+  background-image: url("../../images/background/delivery-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 64px;
+  background-position: bottom;
+
+  @media (min-width: $tablet) {
+    min-height: 924px;
+    background-image: url("../../images/background/delivery-bg-tablet.png");
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desctop) {
+    min-height: 800px;
+    background-image: url("../../images/background/delivery-bg-desctop.png");
+    margin-bottom: 103px;
+  }
+}
 
 .delivery__content {
   display: flex;

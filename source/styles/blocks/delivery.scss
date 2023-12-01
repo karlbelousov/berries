@@ -3,18 +3,21 @@
   background-image: url("../../images/background/delivery-bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  aspect-ratio: 320px / 640px;
   margin-bottom: 64px;
   background-position: bottom;
 
   @media (min-width: $tablet) {
     min-height: 924px;
     background-image: url("../../images/background/delivery-bg-tablet.png");
+    aspect-ratio: 768px / 924px;
     margin-bottom: 100px;
   }
 
   @media (min-width: $desctop) {
     min-height: 800px;
     background-image: url("../../images/background/delivery-bg-desctop.png");
+    aspect-ratio: 1440px / 880px;
     margin-bottom: 103px;
   }
 }

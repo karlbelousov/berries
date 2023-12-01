@@ -1,0 +1,29 @@
+.catalog__title {
+  margin: 0;
+  margin-bottom: 64px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desctop) {
+    margin-bottom: 92px;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  margin-bottom: 64px;
+  gap: 24px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desctop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px 24px;
+  }
+}

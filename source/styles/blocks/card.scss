@@ -1,0 +1,50 @@
+.card {
+  width: 264px;
+  position: relative;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(88, 13, 101, 0.15);
+  @media (max-width: $mobile-only) {
+    &:nth-child(7),
+    &:nth-child(8) {
+      display: none;
+    }
+  }
+}
+
+.card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card__content {
+  padding: 28px 24px 54px;
+}
+
+.card__title {
+  color: $green;
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.card__list {
+  display: flex;
+  gap: 0 12px;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 18px;
+}
+
+.card__weight {
+  margin: 0;
+}
+
+.card__button {
+  position: relative;
+  z-index: 3;
+}

@@ -51,6 +51,10 @@ button {
   @media (min-width: $tablet) {
     width: 768px;
     padding: 0 30px;
+
+    &--small {
+      width: 640px;
+    }
   }
 
   @media (min-width: $desctop) {
